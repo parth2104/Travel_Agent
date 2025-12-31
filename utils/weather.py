@@ -40,4 +40,5 @@ class WeatherForCast:
             respond=requests.get(url=url,params=params)
             return respond.json() if respond.status_code ==200 else {}
         except Exception as e:
-            raise e
+            raise e  
+        
