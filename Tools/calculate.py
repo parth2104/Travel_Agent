@@ -2,7 +2,7 @@ from langchain.tools import tolls
 from utils.calculater import CalculateExpese
 
 
-class Expanse:
+class Expense:
     def __init__(self):
         self.caculate=CalculateExpese()
         self.calculate_setup_tools=self._setup_tools()
