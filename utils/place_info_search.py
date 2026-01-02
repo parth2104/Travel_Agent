@@ -19,14 +19,14 @@ class TavilyPlaceSearch:
             return result["answer"]
         return result
     
-    def taavil_search_restaurant(self,place):
+    def tavil_search_restaurant(self,place):
         """ search  the restaurant """
         result=self.tavily_tools.invoke({"query":f"what are the top 10 restaurants and eateries in and around {place}"})
         if isinstance(result,dict) and result.get("answer"):
             return result["answer"]
         return result
     
-    def taavil_search_activity(self,place):
+    def tavil_search_activity(self,place):
         """ search activity near the place """
         result=self.tavily_tools.invoke({"query":f"activities in and around {place}"})
         if isinstance(result,dict)  and  result.get("answer"):
